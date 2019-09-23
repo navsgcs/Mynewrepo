@@ -1,1 +1,36 @@
-# weathercom
+# Weathercom
+
+A Python package to get weather reports for any location from weather.com. API for weather.com
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install weathercom.
+
+```bash
+pip install weathercom
+```
+
+## Usage
+
+```python
+import foobar
+
+weatherDetails = weathercom.getCityWeatherDetails("bangalore")
+weatherDetails = weathercom.getCityWeatherDetails(city="bangalore", queryType="daily-data")
+
+weatherDetails=weathercom.getCityWeatherDetails(city="bangalore", queryType="ten-days-data")
+weathercom.getCityWeatherDetails(city="bangalore", queryType="hourly-data")
+weathercom.getCityWeatherDetails(city="bangalore", queryType="monthly-data")
+
+weatherDetais=weathercom.getCityWeatherDetails(city="bangalore", queryType="particular-date-data", date={'year':'2018','month':'09','date': '19')
+
+
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
