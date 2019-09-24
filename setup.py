@@ -1,18 +1,16 @@
-from setuptools import setup
-
+from setuptools import setup, Extension
 def readme():
     with open('README.md') as f:
         README = f.read()
     return README
 
-
 setup(
     name="weathercom",
-    version="1.0.0",
+    version="1.0.5",
     description="A Python package to get weather reports for any location from weather.com. API for weather.com",
     long_description=readme(),
-    long_description_content_type="text/markdown",
-    url="https://github.com/prashanth-p/weathercom/",
+	long_description_content_type='text/markdown',
+	url="https://github.com/prashanth-p/weathercom/",
     author="Prashanth Pradeep",
     author_email="prashanth.pradeep96@gmail.com",
     license="MIT",
@@ -26,6 +24,5 @@ setup(
     ],
     packages=["weathercom"],
     include_package_data=True,
-    install_requires=["requests","json","datetime"],
     keywords = ['weather','weather.com','python weather','weatherpy','yahoo weather','google weather','open weather python','weather api', 'weather api json'],
 )

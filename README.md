@@ -13,7 +13,7 @@ pip install weathercom
 ## Usage
 
 ```python
-import foobar
+import weathercom
 
 weatherDetails = weathercom.getCityWeatherDetails("bangalore")
 weatherDetails = weathercom.getCityWeatherDetails(city="bangalore", queryType="daily-data")
@@ -23,9 +23,8 @@ weatherDetails=weathercom.getCityWeatherDetails(city="bangalore", queryType="hou
 weatherDetails=weathercom.getCityWeatherDetails(city="bangalore", queryType="monthly-data")
 
 weatherDetais=weathercom.getCityWeatherDetails(city="bangalore", queryType="particular-date-data", date={'year':'2018','month':'09','date': '19')
-
-
 ```
+
 ## Defects to be corrected in next release
 Better error handling, particular-date-data can only accept a date in the last five years, imporved user experience 
 
