@@ -25,8 +25,6 @@ weatherDetails=weathercom.getCityWeatherDetails(city="bangalore", queryType="mon
 weatherDetais=weathercom.getCityWeatherDetails(city="bangalore", queryType="particular-date-data", date={'year':'2018','month':'09','date': '19')
 ```
 
-## Defects to be corrected in next release
-Better error handling, particular-date-data can only accept a date in the last five years, imporved user experience 
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
